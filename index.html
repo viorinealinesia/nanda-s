@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>From Princess to Ananda Zahra ♡</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="book">
+    <!-- 01 Opening -->
+    <section class="page active" id="opening">
+      <div class="ribbon">♡</div>
+      <div class="center">
+        <p class="tiny">a little surprise for you</p>
+        <button class="start-btn" data-next="intro">♡ START ♡</button>
+      </div>
+      <div class="cat-badge" aria-label="Marie decoration">🎀 🐱</div>
+    </section>
+
+    <!-- 02 Intro -->
+    <section class="page" id="intro">
+      <div class="card intro-card">
+        <div class="crown">♕</div>
+        <h1>From Princess</h1>
+        <span>to</span>
+        <h2>Ananda Zahra ♡</h2>
+        <div class="bow">🎀</div>
+        <button class="pink-btn" data-next="letter">OPEN MY LETTER 💌</button>
+      </div>
+      <div class="cat-corner">🎀🐱</div>
+    </section>
+
+    <!-- 03 Letter -->
+    <section class="page" id="letter">
+      <article class="letter">
+        <div class="letter-ribbon">🎀</div>
+        <h2>Dear Ananda Zahra,</h2>
+        <p id="typedLetter"></p>
+        <p class="signature">With love,<br><b>Princess ♡</b></p>
+      </article>
+      <button class="pink-btn" data-next="question">NEXT ♡</button>
+    </section>
+
+    <!-- 04 Question -->
+    <section class="page" id="question">
+      <div class="question-card">
+        <p class="eyebrow">A LITTLE QUESTION</p>
+        <h2>Seberapa kenal kamu<br>sama Princess? ♡</h2>
+        <div class="choices">
+          <button data-answer="good">💗 Sangat kenal!</button>
+          <button data-answer="okay">🎀 Lumayan, sih</button>
+          <button data-answer="mystery">🐱 Masih misteri...</button>
+        </div>
+        <p id="answerText" class="answer"></p>
+      </div>
+      <button class="pink-btn hidden" id="questionNext" data-next="memories">LANJUT KE MEMORIES 📸</button>
+    </section>
+
+    <!-- 05 Memories -->
+    <section class="page" id="memories">
+      <div class="memories-head">
+        <p class="eyebrow">OUR LITTLE</p>
+        <h2>Memories ♡</h2>
+        <p>three little moments, one big friendship.</p>
+      </div>
+      <div class="polaroids">
+        <figure class="polaroid p1">
+          <img src="assets/memory-1.png" alt="Memory 1">
+          <figcaption>little moment ♡</figcaption>
+        </figure>
+        <figure class="polaroid p2">
+          <img src="assets/memory-2.png" alt="Memory 2">
+          <figcaption>hehe 🤍</figcaption>
+        </figure>
+        <figure class="polaroid p3">
+          <img src="assets/memory-3.png" alt="Memory 3">
+          <figcaption>us 🎀</figcaption>
+        </figure>
+      </div>
+      <button class="pink-btn" data-next="surprise">NEXT TO SURPRISE 🎁</button>
+    </section>
+
+    <!-- 06 Surprise -->
+    <section class="page" id="surprise">
+      <div class="surprise-wrap">
+        <p class="eyebrow">A LITTLE SECRET</p>
+        <h2>Don't open this yet... 👀</h2>
+        <button class="gift" id="gift">🎁<span>CLICK ME ♡</span></button>
+        <div id="surpriseMessage" class="surprise-message">
+          <div class="sparkles">✦ ♡ ✦</div>
+          <h3>Surprise! 🎀</h3>
+          <p>Thank you for being one of the sweetest parts of my story.</p>
+          <span>You're precious, Zahra ♡</span>
+        </div>
+      </div>
+      <button class="pink-btn hidden" id="surpriseNext" data-next="notes">ONE MORE THING ♡</button>
+    </section>
+
+    <!-- 07 Notes -->
+    <section class="page" id="notes">
+      <div class="notes-head">
+        <p class="eyebrow">THINGS I WANT YOU TO KNOW</p>
+        <h2>For You, Zahra ♡</h2>
+      </div>
+      <div class="notes-grid">
+        <button class="note" data-note="Thank you for every little moment. 💗"><b>01</b><span>Thank you ♡</span></button>
+        <button class="note" data-note="Stay exactly as lovely as you are. 🎀"><b>02</b><span>Don't change</span></button>
+        <button class="note" data-note="I hope you always have reasons to smile. 🌸"><b>03</b><span>Stay happy</span></button>
+        <button class="note" data-note="You matter more than you know. 💕"><b>04</b><span>You're precious</span></button>
+      </div>
+      <p id="noteReveal" class="note-reveal">Klik salah satu kartu ♡</p>
+      <button class="pink-btn" data-next="final">FINAL PAGE ✨</button>
+    </section>
+
+    <!-- 08 Final -->
+    <section class="page" id="final">
+      <div class="final-card">
+        <div class="big-cat">🎀🐱</div>
+        <p class="eyebrow">A LITTLE MESSAGE</p>
+        <h2>Thank you<br>for being part of<br>my story. ♡</h2>
+        <p>With love,<br><b>Princess 🎀</b></p>
+        <button class="pink-btn" id="restart">♡ PLAY AGAIN ♡</button>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
