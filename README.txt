@@ -17,3 +17,9 @@ Cara menjalankan:
 
 Catatan:
 Ikon Marie saat ini direpresentasikan sebagai dekorasi cat + bow agar web tetap offline dan tidak bergantung pada gambar berhak cipta dari internet. Jika kamu punya file PNG Marie yang ingin dipakai, masukkan ke assets dan bisa diganti di tahap berikutnya.
+
+
+FAVICON:
+- assets/favicon.png
+- assets/favicon.svg
+Favicon dibuat dengan tema pink-ivory, pita, crown kecil, dan kucing yang mengikuti nuansa website.
